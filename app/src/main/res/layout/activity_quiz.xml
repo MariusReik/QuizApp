@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,22 +7,41 @@
     android:gravity="center">
 
     <ImageView
-        android:id="@+id/quizImageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop" />
+        android:id="@+id/quiz_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cute_seal" />
 
     <TextView
-        android:id="@+id/questionText"
+        android:id="@+id/question_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Question here"
-        android:textSize="18sp"
-        android:padding="8dp" />
+        android:text="What animal is this?"
+        android:textSize="20sp"
+        android:padding="16dp" />
 
     <Button
-        android:id="@+id/nextButton"
+        android:id="@+id/answer1_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Next" />
+        android:text="Answer 1" />
+
+    <Button
+        android:id="@+id/answer2_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer 2" />
+
+    <Button
+        android:id="@+id/answer3_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer 3" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Question" />
 </LinearLayout>

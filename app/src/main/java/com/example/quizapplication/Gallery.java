@@ -27,7 +27,7 @@ public class Gallery extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gallery2);
+        setContentView(R.layout.activity_gallery);
 
         // Access the global gallery collection
         GalleryApplication app = (GalleryApplication) getApplication();
