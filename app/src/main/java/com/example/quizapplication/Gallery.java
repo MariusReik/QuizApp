@@ -52,8 +52,8 @@ public class Gallery extends AppCompatActivity {
                 }
         );
 
-        FloatingActionButton backFab = findViewById(R.id.back_btn);
-        backFab.setOnClickListener(view -> {
+        Button backButton = findViewById(R.id.back_btn);
+        backButton.setOnClickListener(view -> {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         });
