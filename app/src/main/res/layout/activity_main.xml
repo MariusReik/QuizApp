@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Title -->
+    <!-- tittel -->
     <TextView
         android:id="@+id/appTitle"
         android:layout_width="wrap_content"
@@ -20,9 +20,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp"/>
 
-    <!-- Quiz Button -->
+    <!-- Quiz-knapp -->
     <Button
-        android:id="@+id/quiz_btn"
+        android:id="@+id/btn_quiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start Quiz"
@@ -31,15 +31,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
-    <!-- Gallery Button -->
+    <!-- Gallery-knapp -->
     <Button
-        android:id="@+id/gallery_btn"
+        android:id="@+id/btn_gallery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Open Gallery"
-        app:layout_constraintTop_toBottomOf="@id/quiz_btn"
+        app:layout_constraintTop_toBottomOf="@id/btn_quiz"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

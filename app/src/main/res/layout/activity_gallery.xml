@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Gallery">
+    tools:context=".GalleryActivity">
 
-    <!-- Title -->
+    <!-- tittel -->
     <TextView
         android:id="@+id/gallery_title"
         android:layout_width="wrap_content"
@@ -20,30 +20,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <!-- ListView (or RecyclerView for better performance) -->
-    <ListView
-        android:id="@+id/galleryListView"
-        android:layout_width="match_parent"
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="16dp"
         app:layout_constraintTop_toBottomOf="@id/gallery_title"
-        app:layout_constraintBottom_toTopOf="@id/buttonContainer"/>
+        app:layout_constraintBottom_toTopOf="@id/buttonContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Floating Action Button to Add Images -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_input_add"
-        android:contentDescription="Add Image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_margin="16dp"/>
-
-    <!-- Bottom Button Container -->
+    <!-- container nederst -->
     <LinearLayout
         android:id="@+id/buttonContainer"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp"
@@ -51,21 +42,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Back Button -->
+        <!-- Legg til-knapp -->
         <Button
-            android:id="@+id/back_btn"
+            android:id="@+id/btn_add"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Back"/>
+            android:text="Add" />
 
-        <!-- Sort Button -->
+        <!-- Sorter A-Z -->
         <Button
-            android:id="@+id/sort_btn"
+            android:id="@+id/btn_sort_az"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Sort"/>
+            android:text="Sort A-Z" />
+
+        <!-- Sorter Z-A -->
+        <Button
+            android:id="@+id/btn_sort_za"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sort Z-A" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

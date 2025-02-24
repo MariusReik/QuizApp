@@ -1,3 +1,6 @@
+// This file is the launch screen of the app.
+// It provides two buttons that let the user navigate to either the Gallery screen or the Quiz screen.
+
 package com.example.quizapplication;
 
 import android.content.Intent;
@@ -7,22 +10,34 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+    private Button btnGallery, btnQuiz;
+
+    // onCreate: Sets up the main screen with two buttons that launch the Gallery and Quiz activities.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button quizButton = findViewById(R.id.quiz_btn);
-        Button galleryButton = findViewById(R.id.gallery_btn);
+        btnGallery = findViewById(R.id.btn_gallery);
+        btnQuiz = findViewById(R.id.btn_quiz);
 
-        quizButton.setOnClickListener(view -> {
-            Intent intent = new Intent(this, QuizActivity.class);
-            startActivity(intent);
+        btnGallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, GalleryActivity.class);
+                startActivity(intent);
+            }
         });
 
-        galleryButton.setOnClickListener(view -> {
-            Intent intent = new Intent(this, Gallery.class);
-            startActivity(intent);
+        btnQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }
+
+
+
