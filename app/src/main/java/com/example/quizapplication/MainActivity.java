@@ -1,5 +1,6 @@
 // This file is the launch screen of the app.
-// It provides two buttons that let the user navigate to either the Gallery screen or the Quiz screen.
+// It provides two buttons that let the user navigate to either the Gallery screen
+// or the Quiz screen.
 
 package com.example.quizapplication;
 

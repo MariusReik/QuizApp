@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- tittel -->
     <TextView
         android:id="@+id/appTitle"
         android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp"/>
 
-    <!-- Quiz-knapp -->
     <Button
         android:id="@+id/btn_quiz"
         android:layout_width="wrap_content"
@@ -31,7 +29,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
-    <!-- Gallery-knapp -->
     <Button
         android:id="@+id/btn_gallery"
         android:layout_width="wrap_content"

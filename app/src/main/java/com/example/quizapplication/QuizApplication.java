@@ -16,7 +16,7 @@ public class QuizApplication extends Application {
         super.onCreate();
         instance = this;
         quizEntries = new ArrayList<>();
-        // Adding some default quiz entries with built-in images
+        // Adding some default quizquestions
         quizEntries.add(new QuizEntry("Seal", R.drawable.cute_seal));
         quizEntries.add(new QuizEntry("Fox", R.drawable.cute_fox));
         quizEntries.add(new QuizEntry("Penguin", R.drawable.cute_penguin));

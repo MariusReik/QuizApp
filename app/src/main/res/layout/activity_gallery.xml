@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".GalleryActivity">
 
-    <!-- tittel -->
     <TextView
         android:id="@+id/gallery_title"
         android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="0dp"
@@ -31,7 +29,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- container nederst -->
     <LinearLayout
         android:id="@+id/buttonContainer"
         android:layout_width="0dp"

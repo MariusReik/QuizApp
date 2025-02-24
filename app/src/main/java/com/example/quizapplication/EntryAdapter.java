@@ -1,4 +1,4 @@
-// This file contains the adapter for our RecyclerView.
+// This file contains the adapter for  RecyclerView.
 // It binds each QuizEntry (which contains a name and an image)
 // to the layout for a single list item (entry_item.xml) and handles click events.
 

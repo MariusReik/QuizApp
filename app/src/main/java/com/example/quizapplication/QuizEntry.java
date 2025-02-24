@@ -6,7 +6,7 @@ package com.example.quizapplication;
 public class QuizEntry {
     private String name;
     private int imageResId;  // Used for built-in images
-    private String imageUri; // Used for images chosen from the gallery
+    private String imageUri; // Used for images choosen from the gallery
 
     // Constructor for built-in images
     public QuizEntry(String name, int imageResId) {

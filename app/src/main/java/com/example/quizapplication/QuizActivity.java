@@ -1,4 +1,4 @@
-// This file implements the quiz game.
+// This implements the quiz game.
 // It shows a quiz image, three answer options, and tracks the score.
 // Each quiz question is chosen from the shared list and is removed once used.
 
@@ -81,7 +81,6 @@ public class QuizActivity extends AppCompatActivity {
     private void setNewQuestion() {
         if (remainingEntries.isEmpty()) {
             feedbackText.setText("Quiz completed! Final score: " + correctCount + " / " + totalCount);
-            // Optionally, you can finish the activity here with finish();
             return;
         }
         int randomIndex = random.nextInt(remainingEntries.size());
